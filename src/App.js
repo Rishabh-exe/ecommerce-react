@@ -8,14 +8,14 @@ import Product from './components/Product';
 
 function App() {
   return (
-    <>
+    <div className='divapp'>
      <Navbar1/>
      <Routes>
       <Route exact path='/' Component={Home} />
       <Route exact path='/products' Component={Products}/>
       <Route exact path='/products/:id' Component={Product}/>
      </Routes>
-    </>
+    </div>
   );
 }
 
